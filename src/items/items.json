@@ -1,0 +1,43 @@
+{
+    "tshirts": [
+        {
+            "name": "Mv-Icba Tee-Graphite",
+            "image": "http://www.stevenscampusstore.com/outerweb/product_images/MVICBATEEGRAPHITEl.jpg",
+            "price": 1995,
+            "avgRating": 0,
+            "sizes": ["S", "M", "L"],
+            "colors": ["charcoal"]
+        },
+        {
+            "name": "Mv-Icba Tee-Cardinal",
+            "image": "http://www.stevenscampusstore.com/outerweb/product_images/MVICBATEECARDINALl.jpg",
+            "price": 1995,
+            "avgRating": 0,
+            "sizes": ["S", "M", "L", "XL", "XXL", "XS", "XXXL"],
+            "colors": ["charcoal"]
+        }
+    ],
+    "jackets": {},
+    "hats": {},
+    "sweaters": [
+        {
+            "name": "Ci-Schumer Hood",
+            "price": 5295,
+            "image": "http://www.stevenscampusstore.com/outerweb/product_images/CISCHUMERHOODl.jpg",
+            "colors": ["black"],
+            "sizes": ["S", "M", "L", "XL", "XXL", "XXXL"]
+        }
+    ],
+    "drinkware": [
+        {
+            "name": "Distinction Mug With Thumb Piece",
+            "image": "http://www.stevenscampusstore.com/outerweb/product_images/10057414l.jpg",
+            "price": 1995
+        },
+        {
+            "name": "Blue Otg Nalgene Bottle",
+            "image": "http://www.stevenscampusstore.com/outerweb/product_images/BLUEOTGNALGENEBOTTLEl.JPG",
+            "price": 1995
+        }
+    ]
+}
