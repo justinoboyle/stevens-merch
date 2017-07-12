@@ -3,6 +3,7 @@ import {BrowserHistory} from 'react-router';
 import RatingsBox from './../components/RatingBox';
 import NotFound from './NotFound';
 import CartItem from './../cart/CartItem';
+import formatCurrency from './../util/formatCurrency';
 
 export default class ProductPage extends Component {
     render() {
@@ -39,7 +40,7 @@ export default class ProductPage extends Component {
                     </div>
                     <div className="column column-item-right">
                         <div className="column-item-right-inner">
-                            <div className="price">{item.price}</div>
+                            <div className="price">{formatCurrency(item.price)} <small>(each)</small></div>
                             {window._cart.containsA(this.itemIdentifier) ? 
                             <div className="alreadyInCart">
                                 <p>This item is already in your cart</p>
@@ -58,6 +59,9 @@ export default class ProductPage extends Component {
     handleCartClick() {
         window._cart.push(new CartItem(this.item, this.itemIdentifier, 1));
         window._cart.update();
+    }
+    getAmountInCart() {
+        window._cart.containsA(this.itemIdentifier).amount;
     }
     handleAmountChange(it) {
         let { value } = it.target;

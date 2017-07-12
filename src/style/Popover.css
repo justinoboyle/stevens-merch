@@ -1,0 +1,23 @@
+.cartPopover {
+    position: absolute;
+    min-width: 400px;
+    min-height: 300px;
+    right: 30px;
+    top: 40px;
+    background-color: white;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: black;
+    z-index: 2;
+}
+
+.cartPopover > table {
+    width: 100%;
+}
+.cartPopoverBackground {
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

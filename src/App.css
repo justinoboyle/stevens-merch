@@ -57,7 +57,3 @@
     display: block;
   }
 }
-
-.price:before {
-  content: "$"
-}
