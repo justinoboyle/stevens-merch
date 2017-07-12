@@ -1,0 +1,24 @@
+.productBox {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+.productBox-image {
+    max-height: 200px;
+    max-width: 200px;
+}
+.categoryPage {
+    display: flex;
+}
+
+.productBox>a {
+    text-decoration: none;
+    color: black;
+}
+
+.productBox-name {
+    margin-left: 3px;
+}

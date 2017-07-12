@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+import './../style/CategoryBox.css';
 
 export default class CategoryBox extends Component {
     render() {
-        return (
+        return (    
             <div className="categoryBox" id={"category" + this.props.id}>
-                <img src={this.props.image} />
-                <h6>{this.props.head || "head"}</h6>
-                <small>{this.props.subtext || "subtext"}</small>
+                <Link className="categoryBox-link" to={`/category/${this.props.innerName}`}>
+                    <img className="categoryBox-image" src={this.props.image} />
+                    <h2 className="categoryBox-name">{this.props.serializedName || "head"}</h2>
+                    <small>{this.props.itemCount} items available for sale!</small>
+                </Link>
             </div>
         )
     }
 }
+///${this.props.id}/${this.props.name.toLowerCase().replace(new RegExp(' ', 'g'), '-')}

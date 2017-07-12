@@ -1,24 +1,63 @@
-.App {
-  text-align: center;
+.navbarContainer {
+  width: 100%;
+  background-color: red;
+  height: 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.navbar-logo {
+  float: left;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.navbar-buttons {
+  float: right;
 }
 
-.App-intro {
-  font-size: large;
+.column-images {
+  margin-bottom: 10px;
+  max-width: 400px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.column-inner-left {
+  margin: 10px 10px 10px 10px;
+}
+
+.column-item-left {
+  flex: 1;
+}
+
+.column-item-middle {
+  width: 50%;
+}
+
+.column-item-middle-inner {
+  margin: 10px 10px 10px 10px;
+}
+
+.column-item-right {
+  width: 20%;
+}
+
+.column-item-right-inner {
+  margin: 10px 10px 10px 10px;
+}
+
+.columnContainer {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.productPage {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .columnContainer {
+    display: block;
+  }
+}
+
+.price:before {
+  content: "$"
 }

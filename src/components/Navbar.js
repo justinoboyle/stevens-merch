@@ -5,8 +5,8 @@ export default class Navbar extends Component {
         return (
             <div className="navbarContainer">
                 <nav className="navbar">
-                    <div className="navbar-logo">Stevens</div>
-                    <div className="navbar-buttons">...</div>
+                    <span className="navbar-logo">Stevens</span>
+                    <span className="navbar-buttons">Items in cart: {this.props.cart.length || 0} | Total Price: {this.props.cart.calculateTotalPrice()}</span>
                 </nav>
             </div>
         )

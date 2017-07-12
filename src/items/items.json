@@ -4,7 +4,7 @@
             "name": "Mv-Icba Tee-Graphite",
             "image": "http://www.stevenscampusstore.com/outerweb/product_images/MVICBATEEGRAPHITEl.jpg",
             "price": 1995,
-            "avgRating": 0,
+            "avgRating": 4,
             "sizes": ["S", "M", "L"],
             "colors": ["charcoal"]
         },
@@ -17,8 +17,8 @@
             "colors": ["charcoal"]
         }
     ],
-    "jackets": {},
-    "hats": {},
+    "jackets": [],
+    "hats": [],
     "sweaters": [
         {
             "name": "Ci-Schumer Hood",
