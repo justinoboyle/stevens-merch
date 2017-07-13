@@ -1,10 +1,16 @@
 .categoryBox {
     border-width: 1px;
-    border-color: black;
+    border-color: rgba(0,0,0,0.4);
     border-style: solid;
+    border-radius: 10px;
     width: 200px;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
+    font-family: 'Monsterrat' sans-serif;
+    transition: all .2s ease-in-out;
+}
+.categoryBox:hover {
+    transform: scale(1.04);
 }
 .categoryBox-image {
     height: 200px;
@@ -21,4 +27,18 @@
 
 .categoryBox-name {
     margin-left: 3px;
+}
+
+h2.categoryBox-name {
+    position: absolute;
+    transform: position();
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+
+@media (max-width: 710px) {
+  .categoriesPage {
+    display: block !important;
+  }
 }

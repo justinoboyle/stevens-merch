@@ -8,8 +8,8 @@ export default class ProductBox extends Component {
         return (    
             <div className="productBox" id={"product" + this.props.id}>
                 <Link className="productBox-link" to={`/item/${this.props.category}/${this.props.id}/${this.props.innerName}`}>
-                    <img className="productBox-image" src={this.props.image} />
                     <h2 className="productBox-name">{this.props.serializedName || "head"}</h2>
+                    <img className="productBox-image" src={this.props.image} />
                     <small className="price">{formatCurrency(this.props.price || 0)}</small>
                 </Link>
             </div>

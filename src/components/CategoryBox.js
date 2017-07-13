@@ -7,9 +7,9 @@ export default class CategoryBox extends Component {
         return (    
             <div className="categoryBox" id={"category" + this.props.id}>
                 <Link className="categoryBox-link" to={`/category/${this.props.innerName}`}>
+                <h2 className="categoryBox-name">{this.props.serializedName || "head"}</h2>
                     <img className="categoryBox-image" src={this.props.image} />
-                    <h2 className="categoryBox-name">{this.props.serializedName || "head"}</h2>
-                    <small>{this.props.itemCount} items available for sale!</small>
+                    {/*<small>{this.props.itemCount} items available for sale!</small>*/}
                 </Link>
             </div>
         )

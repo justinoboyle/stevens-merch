@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import formatCurrency from './../util/formatCurrency';
-import CartPopover from './../popover/CartPopover'
+import CartPopover from './../popover/CartPopover';
+import nav_logo from './../img/logo.png';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -15,9 +16,18 @@ export default class Navbar extends Component {
             <div className="navbarContainer">
                 <CartPopover onClose={() => this.setState({ cartActive: false })} isActive={this.state.cartActive} />
                 <nav className="navbar">
-                    <span className="navbar-logo">Stevens</span>
+                    <img src={nav_logo} className="navbar-logo" />
                     <span onClick={() => this.setState({ cartActive: !this.state.cartActive })}>
-                        <span className="navbar-buttons">Items in cart: {this.props.cart.length || 0} | Total Price: {formatCurrency(this.props.cart.calculateTotalPrice())}</span>
+                        <span className="navbar-buttons">
+                            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                            {
+                                !(this.props.cart.length > 0) ||
+                                <span>
+                                    <span className="badge">{this.props.cart.length || 0}</span><span className="totalPrice">{formatCurrency(this.props.cart.calculateTotalPrice())}</span>
+                                </span>
+                            }
+                            
+                        </span>
                     </span>
                 </nav>
             </div>

@@ -5,9 +5,15 @@ import formatCurrency from './../util/formatCurrency';
 
 export default class CartPopover extends Component {
     render() {
+        if (!this.registered) {
+            window._registerCartUpdateListener(() => {
+                this.forceUpdate();
+            })
+            this.registered = true;
+        }
         if (this.props.isActive)
             return (
-                <div class="cartPopoverOuter">
+                <div className="cartPopoverOuter">
                     <div onClick={this.props.onClose} className="cartPopoverBackground"></div>
                     <div className="cartPopover">
                         <table>

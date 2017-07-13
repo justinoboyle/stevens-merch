@@ -7,8 +7,9 @@ function setup() {
         _update(cart);
     }
     cart.clear = function () {
-        localStorage['cart'] = JSON.stringify([]);
-        cart = setup();
+        for(let x of cart)
+            console.log(cart)
+        //cart = setup();
         return cart;
     }
     cart.containsA = function (identifier) {

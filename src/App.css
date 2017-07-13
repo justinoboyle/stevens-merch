@@ -1,11 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.navbar-buttons {
+  margin-top: 40px;
+  margin-right: 20px;
+  font-size: 35px;
+  color: rgb(157, 21, 53);
+  cursor: pointer;
+}
+
+.badge {
+  background-color: rgb(157, 21, 53);
+  position: absolute;
+  top: 30px;
+  border-radius: 50%;
+    width: 22px;
+    height: 22px; 
+    color: white;
+    font-size: 18px;
+  text-align: center;
+}
+.totalPrice {
+  padding-left: 30px;
+  font-weight: 100;
+}
 .navbarContainer {
   width: 100%;
-  background-color: red;
-  height: 30px;
+  /*background-color: rgb(157, 21, 53);*/
+  height: 120px;
+}
+
+.pageHeader {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(194, 68, 81);
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.subHeader {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.pageContainer {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar-logo {
   float: left;
+  height: 100px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .navbar-buttons {
@@ -52,8 +102,11 @@
   margin-top: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 710px) {
   .columnContainer {
     display: block;
+  }
+  .totalPrice {
+    display: none;
   }
 }
