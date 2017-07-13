@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {BrowserHistory} from 'react-router';
 import RatingsBox from './../components/RatingBox';
 import NotFound from './NotFound';
 import CartItem from './../cart/CartItem';
@@ -11,7 +10,6 @@ export default class ProductPage extends Component {
             let item = global._items[category][number];
             this.itemIdentifier = {category,number,name};
             this.item = item;
-            console.log(this.itemIdentifier);
         if(item)
             return this.renderPage(item);
         return <NotFound />
@@ -60,14 +58,8 @@ export default class ProductPage extends Component {
         window._cart.push(new CartItem(this.item, this.itemIdentifier, 1));
         window._cart.update();
     }
-    getAmountInCart() {
-        window._cart.containsA(this.itemIdentifier).amount;
-    }
     handleAmountChange(it) {
         let { value } = it.target;
-        if(value == 0) {
-            // todo remove
-        }
         if(value < 0) {
             it.preventDefault();
             it.stopPropagation();

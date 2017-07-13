@@ -8,11 +8,10 @@ export default class CategoryBox extends Component {
             <div className="categoryBox" id={"category" + this.props.id}>
                 <Link className="categoryBox-link" to={`/category/${this.props.innerName}`}>
                 <h2 className="categoryBox-name">{this.props.serializedName || "head"}</h2>
-                    <img className="categoryBox-image" src={this.props.image} />
+                    <img alt={this.props.serializedName} className="categoryBox-image" src={this.props.image} />
                     {/*<small>{this.props.itemCount} items available for sale!</small>*/}
                 </Link>
             </div>
         )
     }
 }
-///${this.props.id}/${this.props.name.toLowerCase().replace(new RegExp(' ', 'g'), '-')}

@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import items from './items/items.json';
 import Main from './Main';
 global._items = items;
+
+let _allItems = [];
+for(let x in global._items) {
+  for(let it of global._items[x])
+    _allItems.push(it);
+}
+global._items["allItems"] = _allItems;
 
 
 

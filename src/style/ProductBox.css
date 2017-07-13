@@ -25,10 +25,12 @@ h2.productBox-name {
     padding: 5px 5px 5px 5px;
     color: white;
 }*/
-.productBox .price {
+.productBox .productBox-price {
     position: fixed;
-    transform: translateX(-420px) translateY(190px);
     font-size: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 5px 5px 5px 5px;
 }
 .productBox-image {
     max-height: 200px;

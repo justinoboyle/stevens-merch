@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../style/Popover.css';
-import generateProductBox from './../util/generateProductBox';
 import formatCurrency from './../util/formatCurrency';
 
 export default class CartPopover extends Component {

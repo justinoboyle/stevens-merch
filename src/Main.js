@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {BrowserRouter as Router, Link, Route,Switch} from 'react-router-dom'; 
+import {Route,Switch} from 'react-router-dom'; 
 import ProductPage from './pages/ProductPage';
 import CategoriesPage from './pages/CategoriesPage';
 import CategoryPage from './pages/CategoryPage';
